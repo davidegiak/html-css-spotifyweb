@@ -17,16 +17,17 @@
                 <li class="link home pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a> </li>
                 <li class="link glass pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Cerca</span></a></li>
                 <li class="link library pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-bars"></i> <span>La tua libreria</span></a> </li>
-                <li class="color-white pd-05 none">Playlist</li>
-                <li class="color-white pd-05 none">Playlist</li>
-                <li class="color-white pd-05 none">Playlist</li>
-                <li class="color-white pd-05 none">Playlist</li>
-                <li class="color-white pd-05 none">Playlist</li>
+                <li class="color-white pd-05 none"> <h2>Playlist</h2></li>
+                <li class="color-white pd-05 none playlist-head flex"><div class="square"><i class="fa-solid fa-plus"></i></div> <span>Crea Playlist</span></li>
+                <li class="color-white pd-05 none new">Nome Playlist</li>
+                <li class="color-white pd-05 none new">Nome Playlist</li>
+                <li class="color-white pd-05 none new">Nome Playlist</li>
+                <li class="color-white pd-05 none new">Nome Playlist</li>
            </ul>
            </ul>
             <ul class="flex link-container up">
-                <li class="link download pd-05"><a class="color-white" href="#"><i class="fa-brands fa-spotify"></i></a> <span>brra</span></li>
-                <li class="link account pd-05"><a class="color-white" href="#"><i class="fa-solid fa-house"></i></a> <span>brra</span></li>
+                <li class="link download pd-05"><a class="color-white" href="#"><img class="download" src="./img/img/download.svg" alt=""></a> Installa app</li>
+                <li class="link account pd-05"><a class="color-white" href="#"><img class="account" src="./img/img/profile.svg" alt=""></a></li>
             </ul>
         </nav>
         <div class="mainpart-container">
@@ -35,7 +36,7 @@
             </div>
             <div class="main-part pd-1lr margin-auto">
                 <ul class="features-container flex">
-                    <li class="features"><a class="color-white " href="#">IN EVIDENZA</a></li>
+                    <li class="features first"><a class="color-white " href="#">IN EVIDENZA</a></li>
                     <li class="features"><a class="color-white " href="#">PODCAST</a></li>
                     <li class="features"><a class="color-white " href="#">CLASSIFICHE</a></li>
                     <li class="features"><a class="color-white " href="#">GENERI E MOOD</a></li>
@@ -150,7 +151,44 @@
     </main>
     <!------------------FOOTER---------------------->
     <footer>
-        <div class="footer"></div>
+        <section class="footer flex">
+            <div class="foot foot-left flex">
+                <div class="player-left img-player-container flex">
+                    <img class="img-player" src="./img/img/player_left.jpg" alt="">
+                    <div class="player-left track-title color-white">
+                        <h4>blablabla</h4>
+                        <p>crrrrrrrrr</p>
+                    </div>
+                </div>
+                <div class="player-left color-white">
+                    <p><i class="fa-regular fa-heart"></i></p>
+                    <p><i class="fa-regular fa-folder"></i></p>
+                </div>
+            </div>
+
+            <div class="foot foot-center flex">
+                <div class="player-center center-up flex margin-b05 color-white">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+
+                <div class="barra-player">
+                    <div class="barra-bright"></div>
+                </div> 
+            </div>
+
+            <div class="foot foot-right flex color-white">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="barra-volume">
+                    <div class="volume-bright"></div>
+                </div>
+            </div>
+        </section>
     </footer>
 
 </body>

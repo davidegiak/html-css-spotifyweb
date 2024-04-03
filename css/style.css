@@ -53,6 +53,14 @@ a {
     border-radius: 100%;
 }
 
+.none {
+    display: none;
+}
+
+.op-0 {
+    opacity: 0;
+}
+
 /********************COLORSS*****************/
 
 .color-white {
@@ -79,21 +87,59 @@ a {
 }
 
 .link {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     list-style: none;
 }
 
-.none {
-    display: none;
+.square {
+    height: 30px;
+    width: 30px;
+    background-color: aliceblue;
+    display: inline-block;
+    position: relative;
 }
 
-.op-0 {
-    opacity: 0;
+.fa-plus {
+    position: absolute;
+    left: calc(50% - 0.5rem);
+    top: calc(50% - 0.5rem);
+    color: #282828;
+    font-size: 1rem;
+}
+
+.playlist-head {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.new {
+    font-size: 0.6rem;
+}
+
+img.download {
+    width: 1.3rem;
+}
+
+.link.download {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+img.account {
+    width: 1.3rem;
+}
+
+.link.account {
+    width: 100%;
 }
 
 /***********************MAIN*******************/
 
-main 
+.home {
+    border-left: 3px solid #adff2f;
+}
 
 .head {
     width: 100%;
@@ -132,6 +178,11 @@ main
     list-style: none;
     line-height: 3rem;
     font-size: 0.6rem;
+    opacity: 0.5;
+}
+
+.first {
+    text-decoration: underline #adff2f;
 }
 
 .sezione {
@@ -161,7 +212,7 @@ main
 
 span {
     display: none;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .logo-big {
@@ -182,8 +233,77 @@ span {
     width: 100%;
     height: 10vh;
     background-color: #282828;
+    padding: 0 auto;
 }
 
+.foot {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.foot-left {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.foot-center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot-right {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.img-player {
+    max-width: 3rem;
+}
+
+.player-left {
+    width: calc(80% / 2);
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-title {
+    font-size: 0.5rem;
+}
+
+.barra-player {
+    height: 3px;
+    background-color: gray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.barra-bright {
+    width: 30%;
+    background-color: white;
+    height: 100%;
+}
+
+.center-up {
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-volume {
+    width: 40%;
+    background-color: gray;
+    height: 3px;
+}
+
+.volume-bright {
+    width: 10%;
+    height: 100%;
+    background-color: white;
+}
 /***********************HOVER*********************/
 
 .card:hover a {
@@ -212,7 +332,7 @@ span {
         font-size: 0.7rem;
     }
     .none {
-        display: block;
+        display: flex;
     }
     .card {
         width: calc(100% / 2 - 1rem);
@@ -229,6 +349,12 @@ span {
     .sezione {
         gap: 0.5rem;
     }
+    .track-title {
+        font-size: 0.8rem;
+    }
+    .img-player {
+        width: 3.5rem;
+    } 
 }
 
 @media screen and (min-width:700px) {
@@ -238,6 +364,9 @@ span {
     .sezione {
         gap: 1rem;
         margin: 0 0.5rem;
+    }
+    .features {
+        font-size: 1rem;
     }
 }
 
