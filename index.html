@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dropbox</title>
+    <title>SPOTIFY</title>
 </head>
 <body>
     <!------------------MAIN---------------------->
@@ -14,15 +14,20 @@
             <ul class="flex link-container up">
                 <li class="link logo-big pd-05 color-white"><a class="color-white" href="#"><img class="w-100" src="./img/img/logo.svg" alt=""></a></li>
                 <li class="link logo pd-05 color-white"><a class="color-white" href="#"><i class="fa-brands fa-spotify"></i></a> <span></span></li>
-                <li class="link home pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a> </li>
-                <li class="link glass pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Cerca</span></a></li>
-                <li class="link library pd-05 color-white"><a class="color-white" href="#"><i class="fa-solid fa-bars"></i> <span>La tua libreria</span></a> </li>
+                <li class="link home pd-05 color-white"><a class="color-gray" href="#"><i class="fa-solid fa-house color-white"></i> <span>Home</span></a> </li>
+                <li class="link glass pd-05 color-white"><a class="color-gray" href="#"><i class="fa-solid fa-magnifying-glass color-gray"></i> <span>Cerca</span></a></li>
+                <li class="link library pd-05 color-white"><a class="color-gray" href="#"><i class="fa-solid fa-bars color-gray"></i> <span>La tua libreria</span></a> </li>
                 <li class="color-white pd-05 none"> <h2>Playlist</h2></li>
-                <li class="color-white pd-05 none playlist-head flex"><div class="square"><i class="fa-solid fa-plus"></i></div> <span>Crea Playlist</span></li>
-                <li class="color-white pd-05 none new">Nome Playlist</li>
-                <li class="color-white pd-05 none new">Nome Playlist</li>
-                <li class="color-white pd-05 none new">Nome Playlist</li>
-                <li class="color-white pd-05 none new">Nome Playlist</li>
+                <li class="color-gray pd-05 none playlist playlist-head flex">
+                    <div class="square">
+                        <i class="fa-solid fa-plus"></i>
+                    </div> 
+                    <span>Crea Playlist</span>
+                </li>
+                <li class="color-gray pd-05 none new playlist">Nome Playlist</li>
+                <li class="color-gray pd-05 none new playlist">Nome Playlist</li>
+                <li class="color-gray pd-05 none new playlist">Nome Playlist</li>
+                <li class="color-gray pd-05 none new playlist">Nome Playlist</li>
            </ul>
            </ul>
             <ul class="flex link-container up">
@@ -36,12 +41,12 @@
             </div>
             <div class="main-part pd-1lr margin-auto">
                 <ul class="features-container flex">
-                    <li class="features first"><a class="color-white " href="#">IN EVIDENZA</a></li>
-                    <li class="features"><a class="color-white " href="#">PODCAST</a></li>
-                    <li class="features"><a class="color-white " href="#">CLASSIFICHE</a></li>
-                    <li class="features"><a class="color-white " href="#">GENERI E MOOD</a></li>
-                    <li class="features"><a class="color-white " href="#">NUOVE USCITE</a></li>
-                    <li class="features"><a class="color-white " href="#">SCOPRI</a></li>
+                    <li class="features first"><a class="color-white features-txt" href="#">IN EVIDENZA</a></li>
+                    <li class="features"><a class="color-white features-txt" href="#">PODCAST</a></li>
+                    <li class="features"><a class="color-white features-txt" href="#">CLASSIFICHE</a></li>
+                    <li class="features"><a class="color-white features-txt" href="#">GENERI E MOOD</a></li>
+                    <li class="features"><a class="color-white features-txt" href="#">NUOVE USCITE</a></li>
+                    <li class="features"><a class="color-white features-txt" href="#">SCOPRI</a></li>
                 </ul>
                 <!-- MUSICA -->
                 <h1 class="color-white margin-b05">Recently played</h1>
@@ -49,7 +54,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/metal_lifting.jpg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/metal_lifting.jpg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Heavy Metal</h3>
@@ -59,7 +64,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/stranger.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/stranger.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
@@ -69,7 +74,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/aquietplace.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/aquietplace.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">A quiet place</h3>
@@ -79,7 +84,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/split.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/split.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Split</h3>
@@ -89,7 +94,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/cure.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/cure.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">A cure for wellness</h3>
@@ -99,7 +104,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/sinister.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/sinister.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Sinister</h3>
@@ -114,7 +119,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/radar.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/radar.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Release radar</h3>
@@ -123,7 +128,7 @@
                     <div class="card margin-b05">
                         <div class="card-img">
                             <a class="op-0" href="#"><i class="fa-solid fa-circle-play color-white icon-play"></i></a>
-                            <img class="w-100 margin-b05" src="./img/img/mixdaily.jpeg" alt="">
+                            <img class="w-100 margin-b05 music-pic" src="./img/img/mixdaily.jpeg" alt="">
                         </div>
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Daily mix 1</h3>
@@ -134,13 +139,13 @@
                 <p class="color-white margin-b05">Più ascolti, più accurati saranno i suggerimenti</p>
                 <section class="sezione recent flex">
                     <div class="card margin-b05">
-                        <img class="b-rad w-100 margin-b05" src="./img/img/youg.jpeg" alt="">
+                        <img class="b-rad w-100 margin-b05 music-pic" src="./img/img/youg.jpeg" alt="">
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Lana Del Ray</h3>
                         </div>
                     </div>
                     <div class="card margin-b05">
-                        <img class="b-rad w-100 margin-b05" src="./img/img/einaudi.jpeg" alt="">
+                        <img class="b-rad w-100 margin-b05 music-pic" src="./img/img/einaudi.jpeg" alt="">
                         <div class="card-caption">
                             <h3 class="color-white title margin-b05">Ludovico Einaudi</h3>
                         </div>
@@ -155,38 +160,33 @@
             <div class="foot foot-left flex">
                 <div class="player-left img-player-container flex">
                     <img class="img-player" src="./img/img/player_left.jpg" alt="">
-                    <div class="player-left track-title color-white">
-                        <h4>blablabla</h4>
-                        <p>crrrrrrrrr</p>
-                    </div>
                 </div>
-                <div class="player-left color-white">
-                    <p><i class="fa-regular fa-heart"></i></p>
-                    <p><i class="fa-regular fa-folder"></i></p>
+                <div class="player-left track-title">
+                    <h4 class="color-white">Player</h4>
+                    <p class="color-gray">Brano Nome</p>
+                </div>
+                <div class="player-left color-gray">
+                    <p><i class="fa-regular fa-heart icons"></i></p>
+                    <p><i class="fa-regular fa-folder icons"></i></p>
                 </div>
             </div>
 
             <div class="foot foot-center flex">
-                <div class="player-center center-up flex margin-b05 color-white">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward"></i>
-                    <i class="fa-solid fa-rotate-left"></i>
+                <div class="player-center center-up flex margin-b05 color-gray">
+                    <i class="fa-solid fa-shuffle icons"></i>
+                    <i class="fa-solid fa-backward icons"></i>
+                    <i class="fa-regular fa-circle-play icons"></i>
+                    <i class="fa-solid fa-forward icons"></i>
+                    <i class="fa-solid fa-rotate-left icons"></i>
                 </div>
-
-                <div class="barra-player">
-                    <div class="barra-bright"></div>
-                </div> 
+                <input class="barra-player" type="range">
             </div>
 
-            <div class="foot foot-right flex color-white">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="barra-volume">
-                    <div class="volume-bright"></div>
-                </div>
+            <div class="foot foot-right flex color-gray ">
+                <i class="fa-solid fa-list-ul icons"></i>
+                <i class="fa-solid fa-desktop icons"></i>
+                <i class="fa-solid fa-volume-high icons"></i>
+                <input class="barra-volume" type="range">
             </div>
         </section>
     </footer>

@@ -73,10 +73,12 @@ a {
 /***********************NAV*******************/
 
 .nav {
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 4rem);
+    width: 3rem;
     justify-content: space-between;
     flex-direction: column;
     background-color: black;
+    overflow: hidden;
 }
 
 .link-container {
@@ -94,7 +96,7 @@ a {
 .square {
     height: 30px;
     width: 30px;
-    background-color: aliceblue;
+    background-color: gray;
     display: inline-block;
     position: relative;
 }
@@ -162,7 +164,7 @@ img.account {
 }
 
 .main-part {
-    height: calc(100vh - 20vh);
+    height: calc(100vh - 10vh - 4rem);
     width: 100%;
     background-color: #141922;
     overflow: scroll;
@@ -178,11 +180,14 @@ img.account {
     list-style: none;
     line-height: 3rem;
     font-size: 0.6rem;
-    opacity: 0.5;
+}
+
+.features-txt {
+    opacity: 0.5; 
 }
 
 .first {
-    text-decoration: underline #adff2f;
+    border-bottom: 1px solid #adff2f;
 }
 
 .sezione {
@@ -231,9 +236,11 @@ span {
 
 .footer {
     width: 100%;
-    height: 10vh;
+    height: 4rem;
     background-color: #282828;
     padding: 0 auto;
+    overflow: hidden;
+    font-size: 0.8rem;
 }
 
 .foot {
@@ -260,11 +267,11 @@ span {
 }
 
 .img-player {
-    max-width: 3rem;
+    width: 80%;
 }
 
 .player-left {
-    width: calc(80% / 2);
+    width: calc(100% / 3 - 0.5rem);;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -304,12 +311,43 @@ span {
     height: 100%;
     background-color: white;
 }
+
+
 /***********************HOVER*********************/
 
-.card:hover a {
+.card-img:hover a {
     opacity: 1;
 }
 
+.link:hover a,
+.link:hover i,
+.playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.playlist:hover .square{
+    background-color: white;
+}
+
+.features-txt:hover {
+    opacity: 1;
+}
+
+.up-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.icons:hover  {
+    cursor: pointer;
+    color: white;
+}
+
+input[type=range]:hover {
+    accent-color: white;
+}
 /**********************MEDIA*********************/
 
 @media screen and (min-width:375px) {
@@ -368,5 +406,7 @@ span {
     .features {
         font-size: 1rem;
     }
+    .footer {
+        font-size: 1rem;
+    }
 }
-
